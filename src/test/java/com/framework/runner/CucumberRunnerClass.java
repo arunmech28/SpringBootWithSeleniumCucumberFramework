@@ -8,7 +8,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 @CucumberOptions(
-        features = "src/test/resources/features",
+        features = "src/test/resources/runnablefeatures",
         glue = {"com.framework.stepdefinitions"},
         plugin = {"com.framework.runner.CustomReportListener", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
                 "json:target/cucumber-report.json"}
